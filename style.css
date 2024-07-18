@@ -1,23 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap");
 
 body {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   height: 100vh;
-  font-family: "Raleway", sans-serif; 
+  font-family: "Raleway", sans-serif;
 }
 .section-first h1 {
   text-align: center;
   font-size: 2.5rem;
-  color: #1E90FF;
+  color: #1e90ff;
   margin-top: 4rem;
 }
 
 .section-first p {
   text-align: center;
-
 }
 .containerPadre {
   display: flex;
@@ -38,11 +37,11 @@ body {
   height: 19.25rem;
   border-radius: 1.0625rem;
 }
-.textoChange{
-  font-size: 0.8rem;;
+.textoChange {
+  font-size: 0.8rem;
 }
-.textoChange1{
-  font-size: 0.8rem;;
+.textoChange1 {
+  font-size: 0.8rem;
 }
 .container__little2 {
   display: flex;
@@ -50,7 +49,7 @@ body {
   align-items: center;
   height: 19.25rem;
   width: 31.25rem;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   border-radius: 1.0625rem;
   flex-direction: column;
 }
@@ -60,19 +59,19 @@ body {
   border: none;
   border-radius: 1.0625rem;
   cursor: pointer;
-background-color: #1E90FF;
+  background-color: #1e90ff;
   color: #e0e1dd;
   transition: background-color 0.3s;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .btn:hover {
-  background-color: #1C86EE;
+  background-color: #1c86ee;
 }
 
 .container__child {
   height: 400px;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   width: 100%;
   border-radius: 1.0625rem;
   padding-top: 1rem;
@@ -120,7 +119,6 @@ background-color: #1E90FF;
   margin: 1rem;
 }
 
-
 /* Pantallas grandes (Desktops y Laptops) */
 @media (max-width: 900px) {
   .container {
@@ -142,7 +140,6 @@ background-color: #1E90FF;
     display: flex;
     justify-content: center;
   }
-  
 }
 
 @media (max-width: 768px) {
@@ -163,21 +160,28 @@ background-color: #1E90FF;
   }
   .section-first p {
     text-align: center;
-  font-size:0.8rem;
+    font-size: 0.8rem;
   }
 }
-
 
 ::placeholder {
   font-size: 1rem;
   color: #333333;
   color: #888888;
-    opacity: 1;
+  opacity: 1;
 }
 
 /* Smartphones (pantallas pequeñas) */
 @media (max-width: 480px) {
-
+  .section-first h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #1e90ff;
+    margin-top: 2rem;
+  }
+  ::placeholder {
+    font-size: 0.8rem;
+  }
 
   .container__little,
   .container__little2 {
@@ -187,7 +191,6 @@ background-color: #1E90FF;
 
   .container_children1 {
     width: 100%;
-    flex-direction: column;
   }
 
   .btn {
@@ -203,14 +206,24 @@ background-color: #1E90FF;
   .container__children span {
     font-size: 10px;
   }
+  .container {
+    gap: 0;
+  }
 }
 
 /* Teléfonos muy pequeños */
 @media (max-width: 320px) {
+  ::placeholder {
+    font-size: 0.8rem;
+  }
+
+  .section-first h1 {
+    font-size: 2.2rem;
+    margin-top: 2rem;
+  }
   .container_children1 {
     gap: 0.5rem;
   }
-
   .btn {
     padding: 0.2rem 2rem;
     font-size: 8px;
@@ -223,5 +236,7 @@ background-color: #1E90FF;
   .entrada {
     font-size: 0.875rem;
   }
-
+  .container {
+    gap: 0;
+  }
 }
