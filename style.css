@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap");
 
 body {
-  background-color: #f5f5f5;
+  background-color: #e0e0e0;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -13,10 +13,12 @@ body {
   font-size: 2.5rem;
   color: #1e90ff;
   margin-top: 4rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .section-first p {
   text-align: center;
+  font-family:'Times New Roman', Times, serif
 }
 .containerPadre {
   display: flex;
@@ -29,7 +31,7 @@ body {
 .container {
   display: flex;
   justify-content: space-between;
-  gap: 1.25rem;
+  gap: 3.25rem;
 }
 
 .container__little {
@@ -70,11 +72,11 @@ body {
 }
 
 .container__child {
-  height: 400px;
+  height: 280px;
   background-color: #f0f0f0;
   width: 100%;
   border-radius: 1.0625rem;
-  padding-top: 1rem;
+  padding: 1rem;
 }
 
 .container__child2 {
@@ -94,6 +96,10 @@ body {
   border: none;
   background-color: transparent;
   outline: none;
+  width: 100%;
+  padding: 0.625rem;
+  box-sizing: border-box;
+
 }
 
 .container__children {

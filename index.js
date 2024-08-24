@@ -1,7 +1,11 @@
 const Encriptar = () => {
   const elementos = document.querySelector(".entrada");
 
-  if (elementos.value == "") return;
+  if (elementos.value == ""){
+    const valor1 = document.querySelector(".textoChange");
+    valor1.textContent = "Ingresa un texto para encriptar";
+    return
+  }
   let concatenar = "";
 
   for (const valor of elementos.value) {
@@ -23,14 +27,13 @@ const Encriptar = () => {
   const valor2 = document.querySelector(".textoChange1");
   valor1.textContent = concatenar;
   valor2.textContent = "Has encriptado el texto";
-  borradorDeTexto(elementos);
+
 };
 
-const borradorDeTexto = (elementos) => {
-  elementos.value = "";
-};
 
 const Desencriptar = () => {
+  const elementos1 = document.querySelector(".entrada");
+  if (elementos1.value == "")return
   const elementos = document.querySelector(".textoChange");
   let desencriptar = elementos.innerHTML;
   desencriptar = desencriptar
