@@ -91,7 +91,6 @@ body {
   font-size: small;
   padding: 2rem;
 }
-
 .entrada {
   border: none;
   background-color: transparent;
@@ -99,8 +98,10 @@ body {
   width: 100%;
   padding: 0.625rem;
   box-sizing: border-box;
-
+  resize: none;
+  overflow-wrap: break-word;
 }
+
 
 .container__children {
   display: flex;
